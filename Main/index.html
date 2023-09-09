@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+ <header class="text-center position-fixed bg-light top-0 w-100 py-4">
+        <div class="container">
+            <h1 class="my-3 mt-2">BOZOR</h1>
+            <form id="form__market"></form>
+            <div class="row">
+                <div class="col">
+                    <select class="form-select select__model" form="form__market">
+                        <option value="all">All</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <input class="search__market form-control" type="text" form="form__market" placeholder="Search market">
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" form="form__market" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <template>
+        <li class="market border my-3 me-2 shadow rounded text-center p-2 " style="width: 30%;">
+            <img class="market__img" src="https://via.placeholder.com/200x200" width="300px" height="300px" alt="Market Photo">
+            <h4 class="fs-3 my-3 market__name">Name</h4>
+            <p class="price"></p>
+            <button class="bookmark__btn btn btn-primary ">BUY</button>
+        </li>
+    </template>
+    <template class="bookmark__templete">
+        <div class="bookmark__market w-25 text-center m-4 shadow p-4 rounded">
+            <h3 class="name">Name</h3>            
+            <p class="price">1000 so'm</p>
+            <button class="delete__bookmark btn btn-primary ">DELETE</button>
+        </div>
+    </template>
+    <main>
+        <section class="hero" style="margin-top: 11rem;">
+            <div class="container">
+                <div class="accordion w-100 " id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"    data-bs-target="#collapseOne" aria-expanded="true"           aria-controls="collapseOne">
+                            Bookmark market
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body bookmark__items d-flex justify-content-between align-items-center flex-wrap">
+                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <ul class="market__items list-unstyled d-flex align-items-center justify-content-between flex-wrap">
+
+                </ul>
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="../Javascript/utils.js"></script>
+    <script src="../Javascript/mahsulotlar (2).js"></script>
+    <script src="../Javascript/shoping.js"></script>
+</body>
+</html>
